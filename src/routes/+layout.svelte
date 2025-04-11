@@ -13,17 +13,17 @@
 		   </button>
    
 		   <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-4 rounded-box shadow w-64 gap-2">
-			   <li><a href="/about">About</a></li>
-			   <li><a href="/faq">FAQ</a></li>
+			   <li><a href="{base}/about">About</a></li>
+			   <li><a href="{base}/faq">FAQ</a></li>
 			   <li>
 				   <h2 class="menu-title">Features</h2>
 				   <ul>
-					   <li><a href="/security">Tech tools</a></li>
-					   <li><a href="/downloads">Podcast</a></li>
-					   <li><a href="/clicker">Community</a></li>
+					   <li><a href="{base}/security">Tech tools</a></li>
+					   <li><a href="{base}/downloads">Podcast</a></li>
+					   <li><a href="{base}/clicker">Community</a></li>
 				   </ul>
 			   </li>
-			   <a class="btn btn-primary btn-sm" href="/extras">
+			   <a class="btn btn-primary btn-sm" href="{base}/extras">
 				   <Fa icon={faRocket} />
 				   Extras
 			   </a>
@@ -32,16 +32,16 @@
    
 	   <!-- Menu for desktop -->
 	   <div class="hidden sm:flex gap-2">
-		   <a class="btn btn-ghost btn-sm" href="/about">
+		   <a class="btn btn-ghost btn-sm" href="{base}/about">
 			   <Fa icon={faQuestionCircle} />
 			   About
 		   </a>
-		   <a class="btn btn-ghost btn-sm" href="/faq">
+		   <a class="btn btn-ghost btn-sm" href="{base}/faq">
 			<Fa icon={faUsers} />
 			   FAQ
 		   </a>
 		   
-		   <a class="btn btn-ghost btn-sm" href="/about">
+		   <a class="btn btn-ghost btn-sm" href="{base}/about">
 			<Fa icon={faList} />
 			   Devblog
 		   </a>
@@ -55,9 +55,9 @@
 			   </button>
    
 			   <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-6 rounded-box shadow w-56 gap-2">
-				   <li><a href="/security"><Fa icon={faLock} />Security</a></li>
-				   <li><a href="/downloads"><Fa icon={faDownload} />Downloads</a></li>
-				   <li><a href="/clicker"><Fa icon={faMousePointer} />Click TBA</a></li>
+				   <li><a href="{base}/security"><Fa icon={faLock} />Security</a></li>
+				   <li><a href="{base}/downloads"><Fa icon={faDownload} />Downloads</a></li>
+				   <li><a href="{base}/clicker"><Fa icon={faMousePointer} />Click TBA</a></li>
 			   </ul>
 		   </div>
 		   
@@ -76,6 +76,7 @@
 	import { faFlag, faRocket, faUsers, faFire, faQuestionCircle, faLock, faDownload, faMousePointer, faList } from '@fortawesome/free-solid-svg-icons'
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import '../app.css';
+	import { base } from '$app/paths';
 	
 
 	let { children } = $props();

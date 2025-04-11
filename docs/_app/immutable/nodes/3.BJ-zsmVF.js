@@ -1,0 +1,1 @@
+import{t,a as o}from"../chunks/CbV_LbhE.js";import"../chunks/BmA0ExJp.js";import{n as i}from"../chunks/BYrp-0gX.js";var m=t('<head><title>1337XS - About</title></head> <main class="svelte-beg9dw"><div class="main-header svelte-beg9dw"><h1>ABOUT PAGE ABOUT MANY THINGS HELLO HLELO HELLO</h1></div></main>',1);function p(e){var a=m();i(2),o(e,a)}export{p as component};
