@@ -18,9 +18,9 @@
 			   <li>
 				   <h2 class="menu-title">Features</h2>
 				   <ul>
-					   <li><a href="{base}/security">Tech tools</a></li>
-					   <li><a href="{base}/downloads">Podcast</a></li>
-					   <li><a href="{base}/clicker">Community</a></li>
+					   <li><a href="{base}/security">Security</a></li>
+					   <li><a href="{base}/downloads">Downloads</a></li>
+					   <li><a href="{base}/clicker">Clicker</a></li>
 				   </ul>
 			   </li>
 			   <a class="btn btn-primary btn-sm" href="{base}/extras">
@@ -41,7 +41,7 @@
 			   FAQ
 		   </a>
 		   
-		   <a class="btn btn-ghost btn-sm" href="{base}/about">
+		   <a class="btn btn-ghost btn-sm" href="{base}/devblog">
 			<Fa icon={faList} />
 			   Devblog
 		   </a>

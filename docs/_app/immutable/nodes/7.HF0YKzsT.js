@@ -1,1 +1,0 @@
-import{t,a as i}from"../chunks/CbV_LbhE.js";import"../chunks/BmA0ExJp.js";import{n as m}from"../chunks/BYrp-0gX.js";var n=t('<head><title>1337XS - FAQ</title></head> <main class="svelte-beg9dw"><div class="main-header svelte-beg9dw"><h1>HELLO FAQ FAQ FAQ</h1></div></main>',1);function p(e){var a=n();m(2),i(e,a)}export{p as component};

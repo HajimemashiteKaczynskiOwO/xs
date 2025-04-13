@@ -2,9 +2,15 @@
     <title>1337XS - FAQ</title>
 </head>
 <main>
-    <div class="main-header">
-        <h1>HELLO FAQ FAQ FAQ </h1>
+    <div class="main-title">
+        <h1>FAQ - Frequently Asked Questions</h1>
     </div>
+
+    <div class="sub-title">
+        <h2>What is 1337XS?</h2>
+    </div>
+    
+
 </main>
 
 <style>
@@ -16,17 +22,26 @@
         padding: 2rem;
     }
 
-    .main-header {
-        width: 100%;
-        max-width: 1200px; /* Optional: limit header width */
+    .main-title {
+        font-size: 3rem;
         text-align: center;
-        padding: 1rem 0;
-        position: sticky;
-        top: 0;
-        
-        /* Optional styling */
-        background-color: bg-base-100; /* or use bg-base-100 with DaisyUI */
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
-        z-index: 10; /* ensure header stays above content */
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .main-title:hover {
+        transform: scale(1.015);
+    }
+    .sub-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        transition: all 0.3s ease;
+    }
+
+    .sub-title:hover {
+        transform: scale(1.015);
+        opacity: 1;
     }
 </style>
