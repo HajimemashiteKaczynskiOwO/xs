@@ -16,7 +16,6 @@ The following changes and implementations have been made in this version of the 
 * A barebones stylization of all of the pages, which will be updated as the site goes on.
 * Fixed a SvelteKit compatible version of FontAwesome.
 * Fixed the devblog, as you can see.
-*
 * Removed Herobrine
 
 To get a better view on the changes proposed in that first version it is easier to watch the tutorial, it gives you a much better insight into what I started with.

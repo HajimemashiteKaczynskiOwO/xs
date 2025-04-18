@@ -1,6 +1,24 @@
 
 ---
-title: Version 0.0.x
-date: "2023-04-03"
+title: Version 0.2
+date: "2023-04-18"
 ---
-# Onewordtitle
+# FAQ's, Tahoogas, and Errors
+## who!!
+Now that I had my barebones website it's not as difficult to map out what I want to do or where to start, so that's a relief in a way. I'm working on fixing the simple pages first, such as the About page and the FAQ page. Next after that will probably be the resources/security page, since thats not too bad either. Lastly I'm pretty sure im gonna do the clicker because thats gonna take the most work.
+I've made aroud 2-5 backups ready incase something web-breaking occurs again, so im read.y....
+## Changes
+The following changes and implementations have been made in this version of the site:
+* 1337XS now has a fixed About and FAQ page.
+* Added Herobrine
+
+To get a better view on the changes proposed in that first version it is easier to watch the tutorial, it gives you a much better insight into what I started with.
+
+## Features
+    😴 Not much.. yet..      
+
+## Upcoming Changes & Additions
+* Clicker game, Extras page, fixes.
+* JinkyNews (no not kinkynews or ninkyjews) okay maybe itll be called TahoogaNews but something like that
+<hr>
+<br>
