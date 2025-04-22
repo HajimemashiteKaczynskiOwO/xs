@@ -1,10 +1,15 @@
-export const prerender = false;
-
+// src/routes/devblog/[slug]/+page.js
+export const prerender = true;
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
-  const post = await import("../"+params.slug+ ".svx?"); /* @vite-ignore */ 
+  const modules = import.meta.glob('../*.svx', { eager: true });
+  const match = Object.entries(modules).find(([path]) =>
+    path.includes(`${params.slug}.svx`)
+  );
+  if (!match) throw error(404, 'Post not found');
 
+  const post = match[1];
   const { title, date } = post.metadata;
   const content = post.default;
 
@@ -13,4 +18,4 @@ export async function load({ params }) {
     title,
     date,
   };
-};
+}

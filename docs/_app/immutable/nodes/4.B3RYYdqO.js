@@ -1,1 +1,0 @@
-import{t as o,a as t}from"../chunks/D_dCo0-t.js";import"../chunks/pqjD9Efi.js";var r=o('<main class="svelte-beg9dw"><div class="main-header svelte-beg9dw"><h1>adfero affero</h1></div></main>');function n(a){var e=r();t(a,e)}export{n as component};

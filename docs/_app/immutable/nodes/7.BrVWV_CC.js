@@ -1,1 +1,0 @@
-import{t,a as i}from"../chunks/D_dCo0-t.js";import"../chunks/pqjD9Efi.js";var m=t('<main class="svelte-beg9dw"><div class="main-header svelte-beg9dw"><h1>DOWNLOADS DO YOU WANT TO DOWNLOAD ANYTHING</h1></div></main>');function s(a){var e=m();i(a,e)}export{s as component};
