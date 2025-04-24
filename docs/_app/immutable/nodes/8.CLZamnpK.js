@@ -1,1 +1,0 @@
-import{t,a as i}from"../chunks/AW0X4LOd.js";import"../chunks/DKR1l4oO.js";var s=t('<main class="svelte-beg9dw"><div class="main-header svelte-beg9dw"><h1>extras..... wait.....</h1></div></main>');function o(a){var e=s();i(a,e)}export{o as component};

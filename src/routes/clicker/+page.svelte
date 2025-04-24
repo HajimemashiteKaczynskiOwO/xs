@@ -1,9 +1,4 @@
-<main>
-    <div class="main-header">
-        <h1>adfero affero </h1>
-    </div>
-</main>
-
+<img src="images/build.gif" style=" margin:auto;" alt="Build" />
 <style>
     main {
         min-height: 100vh; /* Ensure full viewport height */

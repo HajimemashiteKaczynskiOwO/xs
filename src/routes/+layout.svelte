@@ -13,6 +13,7 @@
 		   </button>
    
 		   <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-4 rounded-box shadow w-64 gap-2">
+			
 			   <li><a href="{base}/about">About</a></li>
 			   <li><a href="{base}/faq">FAQ</a></li>
 			   <li>
@@ -32,6 +33,7 @@
    
 	   <!-- Menu for desktop -->
 	   <div class="hidden sm:flex gap-2">
+		
 		   <a class="btn btn-ghost btn-sm" href="{base}/about">
 			   <Fa icon={faQuestionCircle} />
 			   About
@@ -60,20 +62,27 @@
 				   <li><a href="{base}/clicker"><Fa icon={faMousePointer} />Click TBA</a></li>
 			   </ul>
 		   </div>
+
+		   <a class="btn btn-ghost btn-sm" href="{base}/news">
+			<Fa icon={faNewspaper} />
+			   JinkyNews
+		   </a>
 		   
    
-		   <a class="btn btn-primary btn-sm" href="/extras">
+		   <a class="btn btn-primary btn-sm" href="{base}/extras">
 			   <Fa icon={faRocket} />
 			   Extras
 		   </a>
+		   
 	   </div>
+	   
 	   
    </nav>
 </main>
 
 <script>
 	import Fa from 'svelte-fa'
-	import { faFlag, faRocket, faUsers, faFire, faQuestionCircle, faLock, faDownload, faMousePointer, faList } from '@fortawesome/free-solid-svg-icons'
+	import { faFlag, faRocket, faUsers, faFire, faQuestionCircle, faLock, faDownload, faMousePointer, faList, faNewspaper } from '@fortawesome/free-solid-svg-icons'
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import '../app.css';
 	import { base } from '$app/paths';

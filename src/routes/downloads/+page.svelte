@@ -1,9 +1,16 @@
 <main>
-    <div class="main-header">
-        <h1>DOWNLOADS DO YOU WANT TO DOWNLOAD ANYTHING </h1>
+    <div class="content-wrapper">
+    <div class="feature-card">
+        <h1>Games</h1>
     </div>
-</main>
 
+    <div class="feature-card">
+        <h1>Tools</h1>
+    </div>
+
+    </div>
+        
+</main>
 <style>
     main {
         min-height: 100vh; /* Ensure full viewport height */
