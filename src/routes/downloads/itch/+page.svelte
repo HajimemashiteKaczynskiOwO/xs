@@ -1,52 +1,47 @@
 <script>
     import Fa from 'svelte-fa'
-	import {} from '@fortawesome/free-solid-svg-icons'
+	  import {} from '@fortawesome/free-solid-svg-icons'
     import { faWindows, faLinux, faApple} from '@fortawesome/free-brands-svg-icons';
-    import Cards from '$lib/Cards.svelte';
+    import Games from '$lib/Games.svelte';
 
-    const vpnList = [
+    const gameList = [
     {
-      title: "Mullvad VPN",
-      description: "From the heart of Sweden comes MullvadVPN. An open-source VPN service that focuses on privacy and security, with a no-logs policy.",
-      imageUrl: "https://datakonsulten.se/wp-content/uploads/2024/09/1ea9ce8e24738bcd244520ced012a04e_fgraphic.png",
-      price: "5€/month",
-      compatibility: ['windows', 'linux', 'mac'],
-      link: "https://mullvad.net/en/download/vpn/"
+      title: "Sir Truck",
+      description: "Vampire Survivors-like game where you drive a truck and survive waves against other cars.",
+      imageUrl: "https://img.itch.zone/aW1nLzk4MDAzODMuanBn/original/xV8s%2BY.jpg",
+      price: "Completely Free",
+      compatibility: ['web'],
+      link: "https://lukemuscat.itch.io/sir-truck"
     },
-];
-
+    {
+        title: "You Did It Faster Before",
+        description: "A game where you have to complete levels ASAP.",
+        imageUrl: "https://img.itch.zone/aW1nLzQ4MTE5MzguZ2lm/original/ikKpl7.gif",
+        price: "Completely Free",
+        compatibility: ['download'],
+        link: "https://callofthevoid.itch.io/you-did-it-faster-before"
+    }
+]
 </script>
-
-<div class="main-title">
-    <h1>Security</h1>
+<div style="display: flex; gap: 0.5rem; justify-content: center; align-items: center; margin-top: 2rem;">
+    <a href="https://www.itch.io/games" target="_blank"><h1 style="font-size: 6rem; text-align: center; margin-bottom: 1rem; transition: transform 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); color:red;">Itch.io </h1></a><h1 class="main-title">Games</h1>
 </div>
-<div class="sub-title">
-    <h2>Privacy and integrity is often something that the average surfer overlooks and assumes they already have. That is incorrect. Taking the right measures and doing what's needed to protect yourself online is something few people do. If you go to a website such as <a href="https://www.haveibeenpwned.com" target="_blank">HaveIBeenPWNed</a> and enter an email that you've used, the chance of it having been breached is higher than if it hasnt. </h2>
-</div>
-    <br>
-<div class="sub-title">  
-    <h2>Purely as an example, if you live somewhere where democracy is compromised and you try to publish something online, not protecting your virtual identity is stupid. That is just one of the plethora of reasons that people use VPNs, but just like everything else, it's important to know that you're getting the <b>right</b> one. If you search up "best vpns" online you're just going to get the articles bought & paid for by those same VPN companies, who hog your data, engulf themself in your money, and provide a shit service. That is why I've picked Mullvad VPN as my top candidate to recommend. It's fairly priced at 5€ a month, and you can pay for it using crypto, real cash, credit card, any basically any other form of payment that you can imagine.</h2>
-</div>
+<div class="cards" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
 
-<div class="cards" style="display: flex; gap: 2rem; flex-wrap: nowrap; margin:auto; justify-content:center;">
-
-    <div class="grid grid-cols-1 md:grid-rows-2 lg:grid-rows-3 gap-8 p-8 margin:auto;">
-        {#each vpnList as vpn}
-          <Cards
-            title={vpn.title}
-            description={vpn.description}
-            imageUrl={vpn.imageUrl}
-            price={vpn.price}
-            compatibility={vpn.compatibility}
-            link={vpn.link}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+        {#each gameList as game}
+          <Games
+            title={game.title}
+            description={game.description}
+            imageUrl={game.imageUrl}
+            price={game.price}
+            compatibility={game.compatibility}
+            link={game.link}
           />
         {/each}
       </div>
 </div>
 
-<div class="sub-title">
-  <h2></h2>
-</div>
 
 <style global>
     main {
@@ -105,7 +100,7 @@
         color: #fff;
     }
     .sub-title {
-        font-size: 1.4rem;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
         opacity: 0.9;

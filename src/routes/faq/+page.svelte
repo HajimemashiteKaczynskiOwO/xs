@@ -11,7 +11,7 @@
     </div>
     <div class="feature-card">
         <p>Windows 10/11 have their own pre-installed tool to extract .rar/.zip files.</p>
-        <a href="downloads/winrar-x64-711.exe" download="WinRAR_Installer.exe">Click to download WinRAR if you cannot extract such files.</a>
+        <a href="https://www.7-zip.org/a/7z2409-x64.exe" download="7-Zip_Installer.exe">Click to download 7-Zip if you cannot extract such files.</a>
     </div>
 
     <div class="sub-title">

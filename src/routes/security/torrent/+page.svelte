@@ -1,53 +1,64 @@
 <script>
     import Fa from 'svelte-fa'
-	import {} from '@fortawesome/free-solid-svg-icons'
+	  import {} from '@fortawesome/free-solid-svg-icons'
     import { faWindows, faLinux, faApple} from '@fortawesome/free-brands-svg-icons';
     import Cards from '$lib/Cards.svelte';
 
-    const vpnList = [
+    const softwareList = [
     {
-      title: "Mullvad VPN",
-      description: "From the heart of Sweden comes MullvadVPN. An open-source VPN service that focuses on privacy and security, with a no-logs policy.",
-      imageUrl: "https://datakonsulten.se/wp-content/uploads/2024/09/1ea9ce8e24738bcd244520ced012a04e_fgraphic.png",
-      price: "5€/month",
-      compatibility: ['windows', 'linux', 'mac'],
-      link: "https://mullvad.net/en/download/vpn/"
+        title: "Deluge",
+        description: "Deluge is a lightweight, free, and open-source BitTorrent client that is designed to be extensible and customizable.",
+        imageUrl: "https://i0.wp.com/www.omglinux.com/wp-content/uploads/2022/06/deluge-torrent-icon.jpg?fit=1250%2C656&ssl=1",
+        price: "Completely Free",
+        compatibility: ['windows', 'linux', 'mac'],
+        link: "https://deluge-torrent.org/"
     },
-];
+    {
+      title: "QBittorrent",
+      description: "Open-source BitTorrent client with a clean interface and no ads. Efficient, easy-to-use, and lightweight. Supports custom themes.",
+      imageUrl: "https://harish2k01.in/content/images/size/w960/2024/01/Pasted-7-1024x640.png",
+      price: "Completely Free",
+      compatibility: ['windows', 'linux'],
+      link: "https://www.qbittorrent.org/"
+    },
+    {
+        title: "Folx",
+        description: "Folx is a free torrent client that allows you to download files from the internet and manage your downloads.",
+        imageUrl: "https://macsources.com/wp-content/uploads/2022/06/Folx-Mac-App-June-2022-001.jpg",
+        price: "Completely Free",
+        compatibility: ['mac'],
+        link: "https://www.mac-downloader.com/"
+    },
 
+  ];
 </script>
-
 <div class="main-title">
-    <h1>Security</h1>
+    <h1>Torrent Clients</h1>
 </div>
-<div class="sub-title">
-    <h2>Privacy and integrity is often something that the average surfer overlooks and assumes they already have. That is incorrect. Taking the right measures and doing what's needed to protect yourself online is something few people do. If you go to a website such as <a href="https://www.haveibeenpwned.com" target="_blank">HaveIBeenPWNed</a> and enter an email that you've used, the chance of it having been breached is higher than if it hasnt. </h2>
-</div>
-    <br>
-<div class="sub-title">  
-    <h2>Purely as an example, if you live somewhere where democracy is compromised and you try to publish something online, not protecting your virtual identity is stupid. That is just one of the plethora of reasons that people use VPNs, but just like everything else, it's important to know that you're getting the <b>right</b> one. If you search up "best vpns" online you're just going to get the articles bought & paid for by those same VPN companies, who hog your data, engulf themself in your money, and provide a shit service. That is why I've picked Mullvad VPN as my top candidate to recommend. It's fairly priced at 5€ a month, and you can pay for it using crypto, real cash, credit card, any basically any other form of payment that you can imagine.</h2>
-</div>
+<main>
+<div class="cards" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
 
-<div class="cards" style="display: flex; gap: 2rem; flex-wrap: nowrap; margin:auto; justify-content:center;">
-
-    <div class="grid grid-cols-1 md:grid-rows-2 lg:grid-rows-3 gap-8 p-8 margin:auto;">
-        {#each vpnList as vpn}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+        {#each softwareList as software}
           <Cards
-            title={vpn.title}
-            description={vpn.description}
-            imageUrl={vpn.imageUrl}
-            price={vpn.price}
-            compatibility={vpn.compatibility}
-            link={vpn.link}
+            title={software.title}
+            description={software.description}
+            imageUrl={software.imageUrl}
+            price={software.price}
+            compatibility={software.compatibility}
+            link={software.link}
           />
         {/each}
       </div>
 </div>
-
 <div class="sub-title">
-  <h2></h2>
+    <h2>Remember to bind your VPN with your Torrent Client. Follow <a style="color:red;" href="https://www.reddit.com/r/VPNTorrents/comments/ssy8vv/guide_bind_vpn_network_interface_to_torrent/" target="_blank">this</a> tutorial to know how to do so.</h2>
+</div>
+<div class="popups">
+
 </div>
 
+</main>
 <style global>
     main {
         min-height: 100vh; /* Ensure full viewport height */
@@ -105,7 +116,7 @@
         color: #fff;
     }
     .sub-title {
-        font-size: 1.4rem;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
         opacity: 0.9;

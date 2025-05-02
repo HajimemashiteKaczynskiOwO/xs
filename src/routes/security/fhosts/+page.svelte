@@ -1,53 +1,93 @@
 <script>
     import Fa from 'svelte-fa'
-	import {} from '@fortawesome/free-solid-svg-icons'
+	  import {} from '@fortawesome/free-solid-svg-icons'
     import { faWindows, faLinux, faApple} from '@fortawesome/free-brands-svg-icons';
     import Cards from '$lib/Cards.svelte';
 
-    const vpnList = [
+    const softwareList = [
     {
-      title: "Mullvad VPN",
-      description: "From the heart of Sweden comes MullvadVPN. An open-source VPN service that focuses on privacy and security, with a no-logs policy.",
-      imageUrl: "https://datakonsulten.se/wp-content/uploads/2024/09/1ea9ce8e24738bcd244520ced012a04e_fgraphic.png",
-      price: "5€/month",
+      title: "JDownloader2",
+      description: "Open-source downloader that allows you to quickly and efficiently download files from services like Mega, Google Drive, etc.",
+      imageUrl: "https://blog.desdelinux.net/wp-content/uploads/2018/06/Logo_JDownloader2_desdelinux.png",
+      price: "Completely Free",
       compatibility: ['windows', 'linux', 'mac'],
-      link: "https://mullvad.net/en/download/vpn/"
+      link: "https://jdownloader.org/"
     },
-];
-
+    {
+        title: "Motrix",
+        description: "Motrix is a full-featured download manager that supports HTTP, FTP, BitTorrent, and Magnet links.",
+        imageUrl: "https://itsfoss.com/content/images/wordpress/2021/11/Motrix-ft.png",
+        price: "Completely Free",
+        compatibility: ['windows', 'linux', 'mac'],
+        link: "https://motrix.app/"
+    },
+    {
+        title: "Gopeed",
+        description: "Gopeed is a free and open-source download manager that allows you to download files from various file hosting services.",
+        imageUrl: "https://packagestore.com/wp-content/uploads/2023/05/C67C6E3CAE79A95342485676571E8A5C.png",
+        price: "Completely Free",
+        compatibility: ['windows', 'linux', 'mac'],
+        link: "https://gopeed.com/"
+    },
+    {
+        title: "Fuckingfast",
+        description: "Fuckingfast is a privacy focused file hosting service that doesn't store IP / logs, and allows you to upload files up to 10GB in size.",
+        imageUrl: "https://m.media-amazon.com/images/I/31O4CFPI5oL._AC_UF1000,1000_QL80_.jpg",
+        price: "Completely Free",
+        compatibility: [],
+        link: "https://fuckingfast.co/"
+    },
+    {
+        title: "Gofile",
+        description: "Gofile is a free file hosting and sharing service that allows you to upload and share files without any restrictions.",
+        imageUrl: "https://bytesbin.com/wp-content/uploads/GoFile.io-Review-930x620.png",
+        price: "Completely Free",
+        compatibility: [],
+        link: "https://gofile.io"
+    },
+    {
+        title: "Mediafire",
+        description: "Mediafire is a file hosting and sharing service that allows you to upload and share files with others.",
+        imageUrl: "https://cdn.mos.cms.futurecdn.net/s7ASChYXWKN2AcZxXhekKQ.jpg",
+        price: "Completely Free",
+        compatibility: [],
+        link: "https://www.mediafire.com/"
+    },
+    {
+        title: "Mega",
+        description: "MEGA is a cloud storage and file hosting service that provides end-to-end encryption for your files.",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSJiRPkwcg8M1Nmfqxq_v--JY_daYB43_JIg&s",
+        price: "Free with paid options",
+        compatibility: [],
+        link: "https://mega.nz/"
+    },
+  ];
 </script>
-
 <div class="main-title">
-    <h1>Security</h1>
+    <h1>File Hosts & Download Managers</h1>
 </div>
-<div class="sub-title">
-    <h2>Privacy and integrity is often something that the average surfer overlooks and assumes they already have. That is incorrect. Taking the right measures and doing what's needed to protect yourself online is something few people do. If you go to a website such as <a href="https://www.haveibeenpwned.com" target="_blank">HaveIBeenPWNed</a> and enter an email that you've used, the chance of it having been breached is higher than if it hasnt. </h2>
-</div>
-    <br>
-<div class="sub-title">  
-    <h2>Purely as an example, if you live somewhere where democracy is compromised and you try to publish something online, not protecting your virtual identity is stupid. That is just one of the plethora of reasons that people use VPNs, but just like everything else, it's important to know that you're getting the <b>right</b> one. If you search up "best vpns" online you're just going to get the articles bought & paid for by those same VPN companies, who hog your data, engulf themself in your money, and provide a shit service. That is why I've picked Mullvad VPN as my top candidate to recommend. It's fairly priced at 5€ a month, and you can pay for it using crypto, real cash, credit card, any basically any other form of payment that you can imagine.</h2>
-</div>
+<main>
+<div class="cards" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
 
-<div class="cards" style="display: flex; gap: 2rem; flex-wrap: nowrap; margin:auto; justify-content:center;">
-
-    <div class="grid grid-cols-1 md:grid-rows-2 lg:grid-rows-3 gap-8 p-8 margin:auto;">
-        {#each vpnList as vpn}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+        {#each softwareList as software}
           <Cards
-            title={vpn.title}
-            description={vpn.description}
-            imageUrl={vpn.imageUrl}
-            price={vpn.price}
-            compatibility={vpn.compatibility}
-            link={vpn.link}
+            title={software.title}
+            description={software.description}
+            imageUrl={software.imageUrl}
+            price={software.price}
+            compatibility={software.compatibility}
+            link={software.link}
           />
         {/each}
       </div>
 </div>
 
-<div class="sub-title">
-  <h2></h2>
+<div class="popups">
+
 </div>
 
+</main>
 <style global>
     main {
         min-height: 100vh; /* Ensure full viewport height */
@@ -105,7 +145,7 @@
         color: #fff;
     }
     .sub-title {
-        font-size: 1.4rem;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
         opacity: 0.9;

@@ -1,4 +1,7 @@
-<main>
+
+<script>
+    import { base } from '$app/paths';
+</script><main>
     <div class="main-title">
         <h1>Security + Resources</h1>
     </div>
@@ -6,15 +9,15 @@
     <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://mullvad.net/press/MullvadVPN_logo_Landscape_RGB_Color_negative.png"
+            src="/images/elacia.png"
             alt="VPN's"
             class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">VPN's</h2>
-          <p>VPN's with the highest priority of security, no logs, and not overly expensive.</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Learn More</button>
+          <h2 class="card-title">Security</h2>
+          <p>Little infodump about VPN's, distros and other security measures.</p>
+          <div class="card-actions"><a href="/security/vpn">
+            <button class="btn btn-primary">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -29,8 +32,8 @@
         <div class="card-body items-center text-center">
           <h2 class="card-title">Torrent Clients</h2>
           <p>Lightweight, secure, and fast Torrent Clients.</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Learn More</button>
+          <div class="card-actions"><a href="/security/torrent">
+            <button class="btn btn-primary">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -38,15 +41,15 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            src="https://wallpapers.com/images/featured/browser-background-2rcwzuxhnsjx49h7.jpg"
             alt="Browsers"
             class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">Browsers</h2>
           <p>Privacy-focused browsers</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Learn More</button>
+          <div class="card-actions"><a href="/security/browsers">
+            <button class="btn btn-primary">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -54,15 +57,15 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
+            src="https://images2.alphacoders.com/122/1224122.png"
+            alt="OS's"
             class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Card Title</h2>
-          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
+          <h2 class="card-title">Operating Systems</h2>
+          <p>Linux-based operating systems with a focus on privacy, integrity, and efficiency.</p>
+          <div class="card-actions"><a href="/security/distros">
+            <button class="btn btn-primary">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -70,15 +73,15 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
+            src="https://miro.medium.com/v2/resize:fit:880/1*ctYt02VR8kmue1V9_D_V8w.jpeg"
+            alt="Softwares"
             class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Card Title</h2>
-          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
+          <h2 class="card-title">Software</h2>
+          <p>Useful software that can aid you.</p>
+          <div class="card-actions"><a href="/security/software">
+            <button class="btn btn-primary">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -86,15 +89,15 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
+            src="https://www.freedownloadmanager.org/public/img/v2/src_win.svg"
+            alt="File Hosts"
             class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Card Title</h2>
-          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
+          <h2 class="card-title">File Hosts & Download Managers</h2>
+          <p>Fast, free, and anonymous file hosts with quick and efficient download managers.</p>
+          <div class="card-actions"><a href="/security/fhosts">
+            <button class="btn btn-primary">Learn More</button></a>
           </div>
         </div>
       </div>

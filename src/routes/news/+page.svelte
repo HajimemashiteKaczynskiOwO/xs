@@ -7,21 +7,20 @@
     <div>
         <img src="images/wmgone.png" style="margin:auto; width:350px; height:100px;" alt="WM Gone" />
     </div>
-
+    <div class="news-card">
+        <img src="https://imageproxy.ifunny.co/resize:640x,quality:90x75/images/1f8018bbecbe3c6a58ddcdb8ec84514e4ed955dd93e3e3dd057f43f20f9cba49_3.jpg" style="margin:auto; width:400px; height:250px;" alt="Build" />
+        <div class="feature-card-content">
+        <a href="{base}/news/gassy"><b><h1 class="sub-title">This News page needs a hero!</h1></b></a>
+    </div></div>
     <div class="news-card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgKATTPGik9NLmU7ER-DkHxJTXMRgwrCtUBQ&shttps://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/72fd7d3d-e015-47bd-a531-064e3d24660d/dfondw6-c8c6ebdb-cf18-4c91-aa53-80fd5fb6eea9.jpg/v1/fill/w_1062,h_752,q_70,strp/commission__sonic_the_hedgehog_inflation_by_immanuellalissa_dfondw6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvNzJmZDdkM2QtZTAxNS00N2JkLWE1MzEtMDY0ZTNkMjQ2NjBkXC9kZm9uZHc2LWM4YzZlYmRiLWNmMTgtNGM5MS1hYTUzLTgwZmQ1ZmI2ZWVhOS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.857rpvRTfIPWXqoBLoKjThg54u32JhMeRqFgdjFqjZk" style="margin:auto; width:400px; height:250px;" alt="Build" />
         <div class="feature-card-content">
         <a href="{base}/news/sonic"><b><h1 class="sub-title">Sonic Inflation Affects Us all.</h1></b></a>
     </div></div>
     <div class="news-card">
-        <img src="images/build.gif" style="margin:auto; width:400px; height:250px;" alt="Build" />
+        <img src="https://preview.redd.it/this-thread-needs-a-hero-v0-uiyrisafs9rb1.jpeg?width=640&crop=smart&auto=webp&s=4c7734c0c19482d7c5dbaea551163ae98472070c" style="margin:auto; width:400px; height:250px;" alt="Build" />
         <div class="feature-card-content">
-        <a href="{base}/news/basenewspage"><b><h1 class="sub-title">This Has Happened over Here</h1></b></a>
-    </div></div>
-    <div class="news-card">
-        <img src="images/build.gif" style="margin:auto; width:400px; height:250px;" alt="Build" />
-        <div class="feature-card-content">
-        <a href="{base}/news/basenewspage"><b><h1 class="sub-title">This Has Happened over Here</h1></b></a>
+        <a href="{base}/news/lightning"><b><h1 class="sub-title">Lightning strikes in Argentina!</h1></b></a>
     </div></div>
     <div class="news-card">
         <img src="images/build.gif" style="margin:auto; width:400px; height:250px;" alt="Build" />

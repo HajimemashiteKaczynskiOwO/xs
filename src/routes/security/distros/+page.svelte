@@ -1,53 +1,86 @@
 <script>
     import Fa from 'svelte-fa'
-	import {} from '@fortawesome/free-solid-svg-icons'
+	  import {} from '@fortawesome/free-solid-svg-icons'
     import { faWindows, faLinux, faApple} from '@fortawesome/free-brands-svg-icons';
     import Cards from '$lib/Cards.svelte';
 
-    const vpnList = [
+    const distroList = [
     {
-      title: "Mullvad VPN",
-      description: "From the heart of Sweden comes MullvadVPN. An open-source VPN service that focuses on privacy and security, with a no-logs policy.",
-      imageUrl: "https://datakonsulten.se/wp-content/uploads/2024/09/1ea9ce8e24738bcd244520ced012a04e_fgraphic.png",
-      price: "5€/month",
-      compatibility: ['windows', 'linux', 'mac'],
-      link: "https://mullvad.net/en/download/vpn/"
+      title: "Linux Mint",
+      description: "Starter-friendly Linux distribution based on Ubuntu and Debian.",
+      imageUrl: "https://linuxiac.b-cdn.net/wp-content/uploads/2023/05/linuxmint.jpg",
+      price: "Completely Free",
+      compatibility: [],
+      link: "https://linuxmint.com/"
     },
-];
+    {
+        title: "Ubuntu",
+        description: "Starter-friendly popular Linux distribution based on Debian, known for its ease of use.",
+        imageUrl: "https://letmetechyou.com/wp-content/uploads/2022/06/ubuntu-linux-in-eve-ng.png",
+        price: "Completely Free",
+        compatibility: [],
+        link: "https://ubuntu.com/"
+    },
+    {
+        title: "OpenSUSE",
+        description: "Community-driven Linux distribution known for its stability and flexibility. Exists in two versions: Leap and Tumbleweed.",
+        imageUrl: "https://fosstorrents.com/img/Banner/opensuse.webp",
+        price: "Completely Free",
+        compatibility: [],
+        link: "https://www.opensuse.org/"
+    },
+    {
+        title: "Fedora",
+        description: "Community-driven Linux distribution known for its cutting-edge features.",
+        imageUrl: "https://linuxiac.b-cdn.net/wp-content/uploads/2020/08/fedora.png",
+        price: "Completely Free",
+        compatibility: [],
+        link: "https://fedoraproject.org/"
+    },
+    {
+        title: "Nobara",
+        description: "A Fedora-based Linux distribution designed for gaming and multimedia.",
+        imageUrl: "https://gearous.myshopify.com/cdn/shop/files/JJKnobara_sample.png?v=1709788455",
+        price: "Completely Free",
+        compatibility: [],
+        link: "https://nobaraproject.org/"
+    },
+    {
+        title: "Arch Linux",
+        description: "Lightweight and flexible distro, btw. Not for beginners and pretty advanced.",
+        price: "Completely Free",
+        imageUrl: "https://preview.redd.it/na6opzjr42601.jpg?width=640&crop=smart&auto=webp&s=b0c1e2fe0b0d7c6fba0a2ba1b9677fa13b07e322",
+        compatibility: [],
+        link: "https://archlinux.org/"
+    },
 
+  ];
 </script>
-
 <div class="main-title">
-    <h1>Security</h1>
+    <h1>Operating Systems</h1>
 </div>
-<div class="sub-title">
-    <h2>Privacy and integrity is often something that the average surfer overlooks and assumes they already have. That is incorrect. Taking the right measures and doing what's needed to protect yourself online is something few people do. If you go to a website such as <a href="https://www.haveibeenpwned.com" target="_blank">HaveIBeenPWNed</a> and enter an email that you've used, the chance of it having been breached is higher than if it hasnt. </h2>
-</div>
-    <br>
-<div class="sub-title">  
-    <h2>Purely as an example, if you live somewhere where democracy is compromised and you try to publish something online, not protecting your virtual identity is stupid. That is just one of the plethora of reasons that people use VPNs, but just like everything else, it's important to know that you're getting the <b>right</b> one. If you search up "best vpns" online you're just going to get the articles bought & paid for by those same VPN companies, who hog your data, engulf themself in your money, and provide a shit service. That is why I've picked Mullvad VPN as my top candidate to recommend. It's fairly priced at 5€ a month, and you can pay for it using crypto, real cash, credit card, any basically any other form of payment that you can imagine.</h2>
-</div>
+<main>
+<div class="cards" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
 
-<div class="cards" style="display: flex; gap: 2rem; flex-wrap: nowrap; margin:auto; justify-content:center;">
-
-    <div class="grid grid-cols-1 md:grid-rows-2 lg:grid-rows-3 gap-8 p-8 margin:auto;">
-        {#each vpnList as vpn}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+        {#each distroList as distro}
           <Cards
-            title={vpn.title}
-            description={vpn.description}
-            imageUrl={vpn.imageUrl}
-            price={vpn.price}
-            compatibility={vpn.compatibility}
-            link={vpn.link}
+            title={distro.title}
+            description={distro.description}
+            imageUrl={distro.imageUrl}
+            price={distro.price}
+            compatibility={distro.compatibility}
+            link={distro.link}
           />
         {/each}
       </div>
 </div>
 
-<div class="sub-title">
-  <h2></h2>
+<div class="popups">
+
 </div>
 
+</main>
 <style global>
     main {
         min-height: 100vh; /* Ensure full viewport height */
@@ -105,7 +138,7 @@
         color: #fff;
     }
     .sub-title {
-        font-size: 1.4rem;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
         opacity: 0.9;
