@@ -1,1 +1,0 @@
-import"../chunks/CWj6FrbW.js";import"../chunks/69_IOA4Y.js";import{t as i,a as o}from"../chunks/cZdEq6tI.js";var m=i('<img src="images/build.gif" style=" margin:auto;" alt="Build">');function g(a){var t=m();o(a,t)}export{g as component};

@@ -11,7 +11,7 @@
       imageUrl: "https://swedroid.se/wp-content/uploads/2013/05/libreoffice-711x533.png",
       price: "Completely Free",
       compatibility: ['windows', 'linux', 'mac'],
-      link: "#libreoffice"
+      link: "https://www.libreoffice.org/download/download-libreoffice/"
     },
     {
         title: "OBS Studio",
