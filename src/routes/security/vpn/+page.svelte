@@ -45,7 +45,7 @@
 </div>
 
 <div class="sub-title">
-  <h2></h2>
+  <h2>Thanks for reading!</h2>
 </div>
 
 <style global>
