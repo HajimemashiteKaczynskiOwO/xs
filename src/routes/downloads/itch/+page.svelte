@@ -20,7 +20,72 @@
         price: "Completely Free",
         compatibility: ['download'],
         link: "https://callofthevoid.itch.io/you-did-it-faster-before"
-    }
+    },
+    {
+    title: "PolyTrack",
+    description: "Low-poly racing game with loops, jumps and high speeds, where every millisecond counts.",
+    imageUrl: "https://img.itch.zone/aW1hZ2UvMTgyOTg5My8yMDYwODQ5NC5wbmc=/original/8F4Wg7.png",
+    price: "Completely Free",
+    compatibility: ['web', 'download'],
+    link: "https://kodub.itch.io/polytrack"
+  },
+  {
+    title: "Get Yoked",
+    description: "A game where you play as a yoked bodybuilder and gain as much muscle as possible.",
+    imageUrl: "https://img.itch.zone/aW1nLzE5NDg4MDY1LnBuZw==/original/0eezqm.png",
+    price: "Completely Free",
+    compatibility: ['web', 'download'],
+    link: "https://gregs-games.itch.io/get-yoked-2"
+  },
+  {title: "Berserk Survivor",
+    description: "Hack n Slash arena fan game, set in Kentaro Miura's BERSERK manga/anime universe.",
+    imageUrl: "https://img.itch.zone/aW1nLzE0NjMyNzYwLnBuZw==/original/Be283p.png",
+    price: "Completely Free",
+    compatibility: ['web', 'download'],
+    link: "https://renzk.itch.io/berserksurvivor"
+  },
+  {title: "Baldi's Basics",
+    description: "Baldi's Basics in Education and Learning is a state-of-the-art, fully 3D interactive, fun-time educational game that teaches a slew of subjects! From math to spelling, you'll learn a lot!",
+    imageUrl: "https://img.itch.zone/aW1hZ2UvMjM5ODQxLzE2NTAzMjUucG5n/original/Y8LdOc.png",
+    price: "Completely Free",
+    compatibility: ['download'],
+    link: "https://basically-games.itch.io/baldis-basics"
+  },
+  {title: "Half Sword",
+    description: "Physics-based 3D sword fighting game, where you can use your sword to attack, block and parry.",
+    imageUrl: "https://img.itch.zone/aW1hZ2UvMTA4OTQ1NC8xMTMxMzUwNS5naWY=/original/kKvHAh.gif",
+    price: "Completely Free",
+    compatibility: ['download'],
+    link: "https://knives-frank.itch.io/halfsword"
+  },
+  {title: "Assessment Examination",
+    description: "Thanks for applying to the Authenticity Assessment Department. We wish you luck on your upcoming examination!",
+    imageUrl: "https://img.itch.zone/aW1hZ2UvMTQyMDc0Ny84Mjc0NTM1LnBuZw==/original/J1xk4u.png",
+    price: "Completely Free",
+    compatibility: ['download'],
+    link: "https://wenderlygames.itch.io/assessment-examination"
+  },
+  {title: "Atlyss",
+    description: "AORPG game where you can explore the world and fight against monsters. Promise it's not a gooner game.",
+    imageUrl: "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2024/11/atlyss-co-op-rpg-steam.jpg",
+    price: "Completely Free",
+    compatibility: ['download'],
+    link: "https://kiseff.itch.io/atlyss"
+  },
+  {title: "Little Chef",
+    description: "Fun and cute 2D physics-based cooking game with a focus on experimentation and discovery.",
+    imageUrl: "https://img.itch.zone/aW1hZ2UvMjA5Njg2MC8xMjM0NTc2MS5wbmc=/original/%2FY4iaa.png",
+    price: "Completely Free",
+    compatibility: ['web','download'],
+    link: "https://truebiger.itch.io/little-chef"
+  },
+  {title: "Karlson 2D",
+    description: "Short game made in 2 days for the Mix And Game Jam, hosted by Mix and Jam. The theme was to recreate a mechanic from a game in another dimension.",
+    imageUrl: "https://i.ytimg.com/vi/ozvs5dA9_aQ/maxresdefault.jpg",
+    price: "Completely Free",
+    compatibility: ['download'],
+    link: "https://truebiger.itch.io/little-chef"
+  },
 ]
 </script>
 <div style="display: flex; gap: 0.5rem; justify-content: center; align-items: center; margin-top: 2rem;">
