@@ -3,7 +3,9 @@
     import { faFlag, faRocket, faUsers, faFire, faQuestionCircle, faLock, faDownload, faMousePointer, faList } from '@fortawesome/free-solid-svg-icons'
     import { faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>
-
+<head>
+    <title>1337XS - Home</title>
+</head>
 <main>
     <div class="content-wrapper">
         <!-- Left Column Suggestions -->
@@ -17,12 +19,101 @@
             <h1 class="main-title">Welcome to 1337XS!</h1>
             <h2 class="sub-title">Watch the video below ↓</h2>
             
+            
             <div class="video-container">
                 <iframe title="jinky" width="640" height="360" src="videos/jinky.mp4" frameborder="0" allowfullscreen></iframe>
             </div>
             <h3 class="mini-title">1337XS is a digital library for only the best resources you can get as a data traveller, with information such as the best ways to protect yourself online, and the best ways to have fun online for the least amount of torture. Happy browsing!</h3>
         </div>
     </div>
+    <div class="reviews">
+        <h1 class="main-title">Reviews</h1>
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+
+                <iframe title="jinky" width="640" height="360" src="videos/patrick.mp4" frameborder="0" allowfullscreen></iframe>
+
+                <div class="right-column">
+                    <h1>Patrick Star</h1>
+                    <p>This website is very.. good and has many things like the different stuff you can see and click on.</p>
+                    
+                    <div class="rating">
+                        <div class="mask mask-star" aria-label="1 star"></div>
+                        <div class="mask mask-star" aria-label="2 star"></div>
+                        <div class="mask mask-star" aria-label="3 star" aria-current="true"></div>
+                        <div class="mask mask-star" aria-label="4 star"></div>
+                        <div class="mask mask-star" aria-label="5 star"></div>
+                      </div>
+                    </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <iframe title="jinky" width="640" height="360" src="videos/donald.mp4" frameborder="0" allowfullscreen></iframe>
+
+                <div class="right-column">
+                    <h1>Ronald Ump</h1>
+                    <p>I have never seen this good of a Web-site! You'd even think you'd be able to see Crooked Hillary's emails on here! Too bad Sleepy Joe's put his communist work force to censor everyhting with their woke media. A GOLDEN FIVE!.</p>
+                    
+                    <div class="rating">
+                        <div class="mask mask-star" aria-label="1 star"></div>
+                        <div class="mask mask-star" aria-label="2 star"></div>
+                        <div class="mask mask-star" aria-label="3 star" ></div>
+                        <div class="mask mask-star" aria-label="4 star"></div>
+                        <div class="mask mask-star" aria-label="5 star" aria-current="true"></div>
+                      </div>
+                    </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <iframe title="jinky" width="640" height="360" src="videos/phone.mp4" frameborder="0" allowfullscreen></iframe>
+
+                <div class="right-column">
+                    <h1>Phone Guy</h1>
+                    <p>Hello, hello hello? Uh, I wanted to write a review for the people accessing this website, just to uh, let them know that it's a pretty good place to get useful stuff.</p>
+                    
+                    <div class="rating">
+                        <div class="mask mask-star" aria-label="1 star"></div>
+                        <div class="mask mask-star" aria-label="2 star"></div>
+                        <div class="mask mask-star" aria-label="3 star"></div>
+                        <div class="mask mask-star" aria-label="4 star" aria-current="true"></div>
+                        <div class="mask mask-star" aria-label="5 star" ></div>
+                      </div>
+                    </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <iframe title="jinky" width="640" height="360" src="videos/market.mp4" frameborder="0" allowfullscreen></iframe>
+
+                <div class="right-column">
+                    <h1>Market Player</h1>
+                    <p>Hello everybody! My name is Market Pliers and I just wanna say that this website is great! Could use some more features though.</p>
+                    
+                    <div class="rating">
+                        <div class="mask mask-star" aria-label="1 star"></div>
+                        <div class="mask mask-star" aria-label="2 star"></div>
+                        <div class="mask mask-star" aria-label="3 star"></div>
+                        <div class="mask mask-star" aria-label="4 star" aria-current="true"></div>
+                        <div class="mask mask-star" aria-label="5 star"></div>
+                      </div>
+                    </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
 </main>
 
 <style>
@@ -48,6 +139,26 @@
         margin-bottom: 1rem;
         transition: transform 0.3s ease;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .right-column {
+        padding: 1rem;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .right-column h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        scale: 2;
     }
 
     .main-title:hover {

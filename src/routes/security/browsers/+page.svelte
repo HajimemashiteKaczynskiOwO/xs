@@ -97,13 +97,6 @@
         padding: 2rem;
     }
     /* Carousel arrows */
-  .carousel {
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-  }
-  .carousel-item {
-    scroll-snap-align: start;
-  }
 
     .main-title {
         font-size: 6rem;

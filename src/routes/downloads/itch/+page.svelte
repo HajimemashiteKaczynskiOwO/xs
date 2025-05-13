@@ -88,6 +88,8 @@
   },
 ]
 </script>
+
+
 <div style="display: flex; gap: 0.5rem; justify-content: center; align-items: center; margin-top: 2rem;">
     <a href="https://www.itch.io/games" target="_blank"><h1 style="font-size: 6rem; text-align: center; margin-bottom: 1rem; transition: transform 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); color:red;">Itch.io </h1></a><h1 class="main-title">Games</h1>
 </div>

@@ -21,7 +21,6 @@
 				   <ul>
 					   <li><a href="{base}/security">Security</a></li>
 					   <li><a href="{base}/downloads">Downloads</a></li>
-					   <li><a href="{base}/clicker">Clicker</a></li>
 				   </ul>
 			   </li>
 			   <a class="btn btn-primary btn-sm" href="{base}/extras">
@@ -59,7 +58,6 @@
 			   <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-6 rounded-box shadow w-56 gap-2">
 				   <li><a href="{base}/security"><Fa icon={faLock} />Security</a></li>
 				   <li><a href="{base}/downloads"><Fa icon={faDownload} />Downloads</a></li>
-				   <li><a href="{base}/clicker"><Fa icon={faMousePointer} />Click TBA</a></li>
 			   </ul>
 		   </div>
 

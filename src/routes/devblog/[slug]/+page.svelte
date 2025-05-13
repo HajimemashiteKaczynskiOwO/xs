@@ -2,7 +2,9 @@
   /** @type {import('./$types').PageData} */
   export let data;
 </script>
-
+<head>
+  <title>1337XS - Blogpost</title>
+</head>
 <article class="prose">
   <h1>{data.title}</h1>
   <p>Published: {data.date}</p>

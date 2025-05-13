@@ -2,6 +2,9 @@
 	export let data;
     import { base } from '$app/paths';
 </script>
+<head>
+    <title>1337XS - Devblog</title>
+</head>
 <div class="main-title">
 <h1>Devblog</h1>
 </div>

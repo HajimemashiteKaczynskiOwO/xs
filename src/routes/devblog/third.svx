@@ -1,0 +1,27 @@
+
+---
+title: Version 0.3
+date: "2025-05-18"
+---
+# Games, Styles, Addons
+## where!!
+All the pages are done, with the downloads and security pages just needing a little bit of stylization to be fully complete. There are some ideas, such as a popup menu for the 'learn more' button that I wanted to add, but that I just simply didnt have the time to do. That's alright though, and I've still done more than what I originally planned for so I'm glad for that.
+I started on the clicker game, and have added quite a bit of features to it already. I'm happy with the process and think I'm nearing the home stretch. 
+
+## Changes
+
+The following changes and implementations have been made in this version of the site:
+* 1337XS now has a clicker game.
+* Fixed the Resources pages.
+* Removed Herobrine
+
+## Features
+   * 🖱️ Clicker Game      
+   * 🔒 Security Tips
+   * ⬇️ Download Links
+
+## Upcoming Changes & Additions
+* ✅ Reviews
+* 🖱️ Updated Clicker game
+<hr>
+<br>

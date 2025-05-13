@@ -1,16 +1,20 @@
 <script>
     import Extras from '$lib/Extras.svelte';
     import { Fa } from 'svelte-fa';
+    import {base} from '$app/paths';
 
     const extraList = [
     {
       title: "Soy Clicker",
       description: "Sharty-award winning clicker game.",
       imageUrl: "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/og.4ad05d4125a5.png",
-      link: "https://www.mozilla.org/en-US/firefox/new/"
+      link: "clicker",
     },
     ]
 </script>
+<head>
+    <title>1337XS - Devblog</title>
+</head>
 <main>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {#each extraList as extra}

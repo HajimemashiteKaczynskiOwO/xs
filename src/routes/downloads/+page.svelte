@@ -1,7 +1,11 @@
 
 <script>
     import { base } from '$app/paths';
-</script><main>
+</script>
+<head>
+  <title>1337XS - Downloads</title>
+</head>
+<main>
     <div class="main-title">
         <h1>Games + Fun Stuff</h1>
     </div>
