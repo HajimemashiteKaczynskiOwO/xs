@@ -110,6 +110,21 @@
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
+            <div id="slide5" class="carousel-item relative w-full">
+                <img src="/images/drem.png" width="640" height="360" style="height:360px;" />
+
+                <div class="right-column">
+                    <h1>My dream girlfriend</h1>
+                    <p>this website is the best ever i give it a 5/5 because there is so much to find so much to do so many things to do here super duper many things and it is so amazing and the creator is so handsome and sooo strong and so muscular and i will never stop saying just how amazing and handsome and amazing and strong and good at fortnite and good at everything he plays.</p>
+                    
+                    <div class="rating">
+                        <div class="mask mask-star" aria-label="1 star"></div>
+                        <div class="mask mask-star" aria-label="2 star"></div>
+                        <div class="mask mask-star" aria-label="3 star"></div>
+                        <div class="mask mask-star" aria-label="4 star"></div>
+                        <div class="mask mask-star" aria-label="5 star"  aria-current="true"></div>
+                      </div>
+                    </div>
           </div>
     </div>
 

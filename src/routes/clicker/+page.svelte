@@ -2,18 +2,36 @@
     import { onMount } from 'svelte';
     import Clicker from '$lib/Clicker.svelte';
 
+
     let clickMultiplier = $state(1); // Added click multiplier
     let clickBonus = $state(0); // Added direct click bonus
     let gemCount = $state(0);
-
+    let isAnimating = $state(true);
     let gem = null;
+
+    let passiveGemsPerSecond = $state(0);
+    let lastUpdate = $state(Date.now());
+
+
     onMount(() => {
+        const interval = setInterval(() => {
+        const now = Date.now();
+        const delta = (now - lastUpdate) / 1000; // Seconds since last update
+        gemCount = Math.round(gemCount + passiveGemsPerSecond * clickMultiplier * delta);
+        lastUpdate = now;
+    }, 1000);
+
+    return () => clearInterval(interval);
 
     });
 
     function incrementGem() {
         console.log("increment")
-        gemCount += 1 * clickMultiplier + clickBonus; // Increment gem count based on multiplier and bonus
+        const baseGems = 1 + clickBonus;
+        const calculatedGems = baseGems * clickMultiplier;
+        gemCount += Math.round(calculatedGems);  // Round the result before adding
+        isAnimating = false;
+        setTimeout(() => isAnimating = true, 200);
     };
 
     const upgrades = [
@@ -52,7 +70,7 @@
             description: "You mine 10% more gems!",
             image: "/images/clicker/miner.png",
             owned: false,
-            effect: () => clickMultiplier = 1.1 // Add multiplier
+            effect: () => clickMultiplier *= 1.1 // Add multiplier
         },
         {
             name: "Mining Jak lv.2",
@@ -60,7 +78,7 @@
             description: "You mine 15% more gems!",
             image: "/images/clicker/miner2.png",
             owned: false,
-            effect: () => clickMultiplier = 1.2 // Add multiplier
+            effect: () => clickMultiplier *= 1.2 // Add multiplier
         },
         {
             name: "Mining Jak lv.3",
@@ -68,7 +86,7 @@
             description: "You mine 30% more gems!",
             image: "/images/clicker/miner3.png",
             owned: false,
-            effect: () => clickMultiplier = 1.30 // Add multiplier
+            effect: () => clickMultiplier *= 1.30 // Add multiplier
         },
         {
             name: "Cobzon Prime Gemmy Delivery",
@@ -76,41 +94,67 @@
             description: "Doubles your mined gems.",
             image: "/images/clicker/cobzon.png",
             owned: false,
-            effect: () => clickMultiplier = 2.0 // Add multiplier
+            effect: () => clickMultiplier *= 2.0 // Add multiplier
         }
         // Add more Jaks as needed
     ]);
 
+    const passiveUpgrades = [
+    {
+        name: "Gemmy Driller",
+        cost: 2500,
+        description: "Automatically mines 2 gems/second",
+        image: "/images/clicker/drilljak.png",
+        owned: false,
+        rate: 2
+    },
+    {
+        name: "Forklift Babyjak",
+        cost: 12500,
+        description: "Forklifts 10 gems/second",
+        image: "/images/clicker/fork.png",
+        owned: false,
+        rate: 10
+    }
+];
+
     function buyItem(item, type) {
     // Prevent purchase if Jak is already owned
     if (type === 'jak' && item.owned) return;
+    
 
-    if (gemCount >= item.cost) {
-        gemCount -= item.cost;
-        
-        
-        // Only mark Jaks as owned (one-time purchase)
-        if (type === 'jak') {
-            item.owned = true;
-            item.effect();
+        if (gemCount >= item.cost) {
+            gemCount -= item.cost;
+            
+            // Handle Jaks
+            if (type === 'jak') {
+                item.owned = true;
+                item.effect();
+            }
+            
+            // Handle Click Upgrades
+            if (type === 'upgrade') {
+                item.cost = Math.round(item.cost * 1.15);
+                item.effect();
+            }
+            
+            // Handle Passive Upgrades
+            if (type === 'passive') {
+                item.cost = Math.round(item.cost * 1.2);
+                passiveGemsPerSecond += item.rate;
+            }
         }
-        
-
-        
-        // Only increase cost for upgrades (repeatable purchases)
-        if (type === 'upgrade') {
-            item.cost = Math.round(item.cost * 1.15);
-        item.effect();
-        }
-        item = item
-    }
 }
     
 </script>
+
 <head>
     <title>SoyClicker</title>
 </head>
-<audio src="/audio/victory.mp3" autoplay loop></audio>
+<audio autoplay loop>
+  <source src="/audio/victory.mp3" type="audio/mpeg">
+</audio>
+
 <main>
     <section>
         <div class="main">
@@ -136,13 +180,15 @@
                     </div>
                 {/each}
                 </div>
-
             </div>
+            
 
                 <div class="middle">
-                    <h3 style="font-size:3rem;">Gems: {gemCount}<span id="gem-cost"></span></h3>
-                    <h4>Gems per click: {1 * clickMultiplier + clickBonus}</h4>
-                        <img src="images/gem.png" class="gemimg" alt="gem" on:click={() => incrementGem()} />
+                    <h3 style="font-size:3rem;">Gems: {gemCount.toFixed(0)}<span id="gem-cost"></span></h3>
+                    <h4>Gems per click : {((1 + clickBonus) * clickMultiplier).toFixed(0)}</h4>
+                    <h4>Multiplier: {(clickMultiplier).toFixed(2)}</h4>
+                    <h4>Passive: {(passiveGemsPerSecond * clickMultiplier).toFixed(0)}/sec</h4>
+                        <img src="images/gem.png" class="gemimg {isAnimating ? 'animate' : ''}" alt="gem" on:click={() => incrementGem()} />
                 </div>
             
             
@@ -167,7 +213,28 @@
                     </div>
                 {/each}
                 </div>
+                 <div class="items-grid">
 
+        {#each passiveUpgrades as passive (passive.name)}
+    <div 
+        class="item-card {gemCount < passive.cost || passive.owned ? 'unaffordable' : ''}"
+        on:click={() => buyItem(passive, 'passive')}
+    >
+        <!-- Add image -->
+        <img src={passive.image} alt={passive.name} class="item-image" />
+        <div class="item-info">
+            <h3>{passive.name}</h3>
+            <div class="cost-badge">
+                {passive.owned ? 'OWNED' : `Cost: ${passive.cost} gems`}
+            </div>
+        </div>
+        <!-- Add description -->
+        <div class="item-description">
+            {passive.description}
+        </div>
+    </div>
+        {/each}
+    </div>
             </div>
         </div>
     </section>
@@ -220,16 +287,20 @@
     .gemimg {
         width: 400px;
         height: 400px;
-
+        transition: transform 0.05s ease;
     }
+    .gemimg.animate {
+    animation: pulse 2s infinite;
+    animation-delay: 0.05s;
+}
     .gemimg:hover {
         cursor: pointer;
-        transform: scale(1.015);
-        transition: transform 0.3s ease;
+        transform: scale(1.03);
+        transition: transform 0.05s ease;
     }
     .gemimg:active {
-        transform: scale(0.95);
-        transition: transform 0.1s ease;
+        transform: scale(0.85);
+        transition: transform 0.05s ease;
     }
     .items-grid {
         display: grid;
@@ -261,14 +332,14 @@
 
     .item-description {
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
         right: 0;
         background: rgba(0, 0, 0, 0.8);
         color: white;
         padding: 1rem;
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateY(-10%);
         transition: all 0.3s ease;
     }
 
@@ -299,5 +370,17 @@
     
     .cost-badge {
         transition: background-color 0.3s ease;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 </style>
