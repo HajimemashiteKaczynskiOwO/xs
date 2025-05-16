@@ -153,7 +153,7 @@
     <title>SoyClicker</title>
 </head>
 <audio autoplay loop>
-  <source src="/audio/victory.mp3" type="audio/mpeg">
+  <source src="{base}/audio/victory.mp3" type="audio/mpeg">
 </audio>
 
 <main>
