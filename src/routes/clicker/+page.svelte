@@ -1,5 +1,6 @@
 <script lang="js">
     import { onMount } from 'svelte';
+    import {base} from '$app/paths';
     import Clicker from '$lib/Clicker.svelte';
 
 
@@ -47,7 +48,7 @@
             name: "Gemmy Cereal",
             cost: 175,
             description: "Cobson's HWABAG Cereal sure tastes gemmy. Extra 3 gems per click.",
-            image: "/images/clicker/gemlover.png",
+            image: base+"/images/clicker/gemlover.png",
             owned: false,
             effect: () => clickBonus += 2 // Add direct click bonus
         },
@@ -55,7 +56,7 @@
             name: "Honey-eating Swede",
             cost: 2000,
             description: "Mmm, honey! Extra 5 gems per click.",
-            image: "/images/clicker/honeyswede.png",
+            image: base+"/images/clicker/honeyswede.png",
             owned: false,
             effect: () => clickBonus += 2 // Add direct click bonus
         },
@@ -68,7 +69,7 @@
             name: "Mining Jak lv.1",
             cost: 100,
             description: "You mine 10% more gems!",
-            image: "/images/clicker/miner.png",
+            image: base+"/images/clicker/miner.png",
             owned: false,
             effect: () => clickMultiplier *= 1.1 // Add multiplier
         },
@@ -76,7 +77,7 @@
             name: "Mining Jak lv.2",
             cost: 200,
             description: "You mine 15% more gems!",
-            image: "/images/clicker/miner2.png",
+            image: base+"/images/clicker/miner2.png",
             owned: false,
             effect: () => clickMultiplier *= 1.2 // Add multiplier
         },
@@ -84,7 +85,7 @@
             name: "Mining Jak lv.3",
             cost: 300,
             description: "You mine 30% more gems!",
-            image: "/images/clicker/miner3.png",
+            image: base+"/images/clicker/miner3.png",
             owned: false,
             effect: () => clickMultiplier *= 1.30 // Add multiplier
         },
@@ -92,7 +93,7 @@
             name: "Cobzon Prime Gemmy Delivery",
             cost: 2500,
             description: "Doubles your mined gems.",
-            image: "/images/clicker/cobzon.png",
+            image: base+"/images/clicker/cobzon.png",
             owned: false,
             effect: () => clickMultiplier *= 2.0 // Add multiplier
         }
@@ -104,7 +105,7 @@
         name: "Gemmy Driller",
         cost: 2500,
         description: "Automatically mines 2 gems/second",
-        image: "/images/clicker/drilljak.png",
+        image: base+"/images/clicker/drilljak.png",
         owned: false,
         rate: 2
     },
@@ -112,7 +113,7 @@
         name: "Forklift Babyjak",
         cost: 12500,
         description: "Forklifts 10 gems/second",
-        image: "/images/clicker/fork.png",
+        image: base+"/images/clicker/fork.png",
         owned: false,
         rate: 10
     }
