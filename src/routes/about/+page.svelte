@@ -17,6 +17,16 @@
     </div>
 
     <div class="sub-title">
+        <h2>How do I use this website?</h2>
+    </div>
+
+    <div class="under-column">
+        <div class="feature-card">
+            <p>You can begin checking out the Resources tab, where you may find something to your liking. After that, you can explore the Extras page, where you will be able to play 1337XS's games, such as Soy Clicker or DJ Spits Adventure. Have fun!</p>
+        </div>
+    </div>
+
+    <div class="sub-title">
         <h2>Why?</h2>
     </div>
 
@@ -32,15 +42,15 @@
     <div class="under-column">
         <div class="feature-card">
             <ul>
-                <li>Privacy & security tips that actually make sense</li>
+                <li>● Privacy & security tips that actually make sense</li>
 
-                <li>Fun online tools, games, and creative extras</li>
+                <li>● Fun online tools, games, and creative extras</li>
                 
-                <li>Useful downloads and resources</li>
+                <li>● Useful downloads and resources</li>
                 
-                <li>A devblog sharing thoughts, behind-the-scenes work, and updates</li>
+                <li>● A devblog sharing thoughts, behind-the-scenes work, and updates</li>
                 
-                <li>Random cool stuff that makes internet life better (and less soul-crushing)</li>
+                <li>● Random cool stuff that makes internet life better</li>
             </ul>
         </div>
     </div>

@@ -7,8 +7,20 @@
     {
       title: "Soy Clicker",
       description: "Sharty-award winning clicker game.",
-      imageUrl: "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/og.4ad05d4125a5.png",
+      imageUrl: "/images/clickergoat.png",
       link: "clicker",
+    },
+    {
+      title: "DJ Spit's Adventure",
+      description: "Play as DJ Spit in this thrilling pixelated adventure.",
+      imageUrl: "images/djspit.png",
+      link: "https://insanitial.itch.io/spitsadventure",
+    },
+    {
+      title: "Unscary Maze Game",
+      description: "A maze game that is not scary at all.",
+      imageUrl: "images/mazegame.png",
+      link: "https://hajimemashitekaczynskiowo.github.io/peenie/trials/snakelog",
     },
     ]
 </script>
@@ -26,6 +38,7 @@
           />
         {/each}
       </div>
+
 </main>
 <style>
     main {

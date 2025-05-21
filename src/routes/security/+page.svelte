@@ -9,7 +9,7 @@
     <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="/images/elacia.png"
+            src="{base}/images/locktools.png"
             alt="VPN's"
             class="rounded-xl" />
         </figure>
@@ -25,7 +25,7 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://feriman.com/media/posts/88/install-qbittorrent-on-Raspberry-Pi-2.png"
+            src="{base}/images/torrentools.png"
             alt="Torrents"
             class="rounded-xl" />
         </figure>
@@ -41,7 +41,7 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://wallpapers.com/images/featured/browser-background-2rcwzuxhnsjx49h7.jpg"
+            src="{base}/images/webtools.png"
             alt="Browsers"
             class="rounded-xl" />
         </figure>
@@ -57,7 +57,7 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://images2.alphacoders.com/122/1224122.png"
+            src="{base}/images/linuxtools.png"
             alt="OS's"
             class="rounded-xl" />
         </figure>
@@ -73,7 +73,7 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://miro.medium.com/v2/resize:fit:880/1*ctYt02VR8kmue1V9_D_V8w.jpeg"
+            src="{base}/images/softwaretools.png"
             alt="Softwares"
             class="rounded-xl" />
         </figure>
@@ -89,7 +89,7 @@
       <div class="card bg-base-100 w-96 shadow-sm">
         <figure class="px-10 pt-10">
           <img
-            src="https://www.freedownloadmanager.org/public/img/v2/src_win.svg"
+            src="{base}/images/downloadtools.png"
             alt="File Hosts"
             class="rounded-xl" />
         </figure>

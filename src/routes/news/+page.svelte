@@ -5,10 +5,15 @@
 
 <main>
     <div>
-        <img src="images/wmgone.png" style="margin:auto; width:350px; height:100px;" alt="WM Gone" />
+        <img src="images/wmgone.png" style="margin:auto; width:350px; height:100px; padding-bottom:10px;" alt="WM Gone" />
     </div>
+    <div class="news-card"> 
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdna.artstation.com%2Fp%2Fmarketplace%2Fpresentation_assets%2F002%2F146%2F070%2Flarge%2Ffile.jpg%3F1667947295&f=1&nofb=1&ipt=d562493e52fba901888a9cc0833f504c93cc8adf5c481e5e61ef3b0d063240fb" style="margin:auto; width:400px; height:250px;" alt="Build" />
+        <div class="feature-card-content">
+        <a href="{base}/news/ronald"><b><h1 class="sub-title">Ronald Ump Endorses 1337XS!</h1></b></a>
+    </div></div>
     <div class="news-card">
-        <img src="https://imageproxy.ifunny.co/resize:640x,quality:90x75/images/1f8018bbecbe3c6a58ddcdb8ec84514e4ed955dd93e3e3dd057f43f20f9cba49_3.jpg" style="margin:auto; width:400px; height:250px;" alt="Build" />
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fm%2F1oKtc4TRFBwAAAAC%2Fincredible-gassy-the-incredibles.gif&f=1&nofb=1&ipt=b69db1918d7c84fe8dd6664caef86a59d8e8c98ad6fc366f6481f3b195010f28" style="margin:auto; width:400px; height:250px;" alt="Build" />
         <div class="feature-card-content">
         <a href="{base}/news/gassy"><b><h1 class="sub-title">This News page needs a hero!</h1></b></a>
     </div></div>
@@ -22,12 +27,6 @@
         <div class="feature-card-content">
         <a href="{base}/news/lightning"><b><h1 class="sub-title">Lightning strikes in Argentina!</h1></b></a>
     </div></div>
-    <div class="news-card">
-        <img src="images/build.gif" style="margin:auto; width:400px; height:250px;" alt="Build" />
-        <div class="feature-card-content">
-        <a href="{base}/news/basenewspage"><b><h1 class="sub-title">This Has Happened over Here</h1></b></a>
-    </div></div>
-
 
     <div class="feature-card">
         <img src="images/jinky.jpg" style="margin:auto; width:300px; height:300px;" alt="Jinky" />

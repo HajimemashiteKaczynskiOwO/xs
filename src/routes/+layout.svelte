@@ -1,7 +1,7 @@
 <main>
 	<nav class="navbar sticky top-0 z-50 bg-base-300 justify-between transition-all duration-300 shadow-md">
 	   <!-- Logo -->
-	   <a class="btn btn-ghost text-lg" href="/#">
+	   <a class="btn btn-ghost text-lg" href="/{base}">
 		   <img alt="Logo" src="/images/crossyour.png" class="w-4" />
 		   1337XS 
 	   </a>
