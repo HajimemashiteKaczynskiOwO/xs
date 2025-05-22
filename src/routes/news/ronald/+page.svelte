@@ -3,7 +3,7 @@
     import {onMount} from 'svelte';
 </script>
 
-<img src="/images/wmgone.png" style="margin:auto; width:350px; height:100px; padding-top:10px;" alt="WM Gone" />
+<img src="{base}/images/wmgone.png" style="margin:auto; width:350px; height:100px; padding-top:10px;" alt="WM Gone" />
 
 <main>
     <div class="stuff-wrapper">
@@ -20,7 +20,7 @@ When you have a presidential endorsement, the consequences can be a bit of a rol
         <h3>
 Let me make one thing clear, my friend. Even with Ronald Ump's presidential endorsement, our website remains fiercely independent and unbiased. We won't be swayed by political ideologies or affiliations. We're still the same gassy team, bringing you the latest news, facts, and opinions without any political bias. Ronald Ump might have showered us with praise, but we're not going to start singing his praises just to get on his good side. Our commitment to journalism and our readers comes first, always!        </h3>
         <h3>
-1337 is always adapting and growing. We're constantly updating our content, adding new features, and making sure our website runs smoothly. The most recent update concerns our popular game "Soyclicker." We've fixed all the kinks, and now it's better than ever! So, whether you're here for the news, the games, or just a good laugh, rest assured that 1337 is dedicated to providing you with top-notch content. Stay gassy!        </h3>
+1337 is always adapting and growing. We're constantly updating our content, adding new features, and making sure our website runs smoothly. The most recent update concerns our popular game "Soyclicker." We've fixed all the kinks, and now it's better than ever! So, whether you're here for the news, the games, or just a good laugh, rest assured that 1337 is dedicated to providing you with top-notch content.       </h3>
     </div>
 
     

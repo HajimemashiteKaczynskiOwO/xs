@@ -1,0 +1,26 @@
+
+---
+title: Version 0.4
+date: "2025-05-22"
+---
+# SoyClicker, New Images, and Fixed base logistics
+## maybe!!
+The new Soy Clicker game has been updated, with added sounds, images, and a fun gameplay loop! The game doesn't save your data- because it's designed for you to play it and try to reach X amount of gems in the shortest time.
+The images didn't load on the github pages site, and the other pages usch as the Resources tab. It works now though and I think it was because of one single "/". 
+## Changes
+
+The following changes and implementations have been made in this version of the site:
+* Soy Clicker has been fixed
+* More thinngs added to the Extras tab
+* New images in the Resources tab
+* Added Herobrine
+
+## Features
+   * 🖱️ Clicker Game      
+   * 🔒 Security Tips
+   * ⬇️ Download Links
+   * ✅ Reviews
+## Upcoming Changes & Additions
+* 📹 Poster
+<hr>
+<br>

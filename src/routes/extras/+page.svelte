@@ -7,7 +7,7 @@
     {
       title: "Soy Clicker",
       description: "Sharty-award winning clicker game.",
-      imageUrl: "/images/clickergoat.png",
+      imageUrl: "images/clickergoat.png",
       link: "clicker",
     },
     {

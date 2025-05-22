@@ -3,7 +3,7 @@
     import {onMount} from 'svelte';
 </script>
 
-<img src="/images/wmgone.png" style="margin:auto; width:350px; height:100px; padding-top:10px;" alt="WM Gone" />
+<img src="{base}/images/wmgone.png" style="margin:auto; width:350px; height:100px; padding-top:10px;" alt="WM Gone" />
 
 <main>
     <div class="stuff-wrapper">
