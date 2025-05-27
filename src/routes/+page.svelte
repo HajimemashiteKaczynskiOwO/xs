@@ -2,6 +2,7 @@
     import Fa from 'svelte-fa'
     import { faFlag, faRocket, faUsers, faFire, faQuestionCircle, faLock, faDownload, faMousePointer, faList } from '@fortawesome/free-solid-svg-icons'
     import { faGithub } from '@fortawesome/free-brands-svg-icons';
+    import { base } from '$app/paths';
 
 </script>
 <head>
@@ -23,7 +24,16 @@
             
             
             <div class="video-container">
-                <iframe title="jinky" width="640" height="360" src="videos/jinky.mp4" frameborder="0" allowfullscreen></iframe>
+                <video 
+            title="jinky" 
+            controls 
+            muted
+            preload="metadata"
+        >
+            <source src="videos/jinky.mp4" type="video/mp4">
+            Your browser doesn't support video.
+        </video>
+
             </div>
             <h3 class="mini-title">1337XS is a digital library for only the best resources you can get as a data traveller, with information such as the best ways to protect yourself online, and the best ways to have fun online for the least amount of torture. Happy browsing!</h3>
         </div>
@@ -33,7 +43,15 @@
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
 
-                <iframe title="jinky" width="640" height="360" src="videos/patrick.mp4" frameborder="0" allowfullscreen></iframe>
+                <video 
+            title="patrick" 
+            controls 
+            muted
+            preload="metadata"
+        >
+            <source src="videos/patrick.mp4" type="video/mp4">
+            Your browser doesn't support video.
+        </video>
 
                 <div class="right-column">
                     <h1>Patrick Star</h1>
@@ -53,7 +71,16 @@
               </div>
             </div>
             <div id="slide2" class="carousel-item relative w-full">
-                <iframe title="jinky" width="640" height="360" src="videos/donald.mp4" frameborder="0" allowfullscreen></iframe>
+
+<video 
+            title="ump" 
+            controls 
+            muted
+            preload="metadata"
+        >
+            <source src="videos/donald.mp4" type="video/mp4">
+            Your browser doesn't support video.
+        </video>
 
                 <div class="right-column">
                     <h1>Ronald Ump</h1>
@@ -73,7 +100,15 @@
               </div>
             </div>
             <div id="slide3" class="carousel-item relative w-full">
-                <iframe title="jinky" width="640" height="360" src="videos/phone.mp4" frameborder="0" allowfullscreen></iframe>
+<video 
+            title="jinky" 
+            controls 
+            muted
+            preload="metadata"
+        >
+            <source src="videos/phone.mp4" type="video/mp4">
+            Your browser doesn't support video.
+        </video>
 
                 <div class="right-column">
                     <h1>Phone Guy</h1>
@@ -93,8 +128,15 @@
               </div>
             </div>
             <div id="slide4" class="carousel-item relative w-full">
-                <iframe title="jinky" width="640" height="360" src="videos/market.mp4" frameborder="0" allowfullscreen></iframe>
-
+<video 
+            title="jinky" 
+            controls 
+            muted
+            preload="metadata"
+        >
+            <source src="videos/market.mp4" type="video/mp4">
+            Your browser doesn't support video.
+        </video>
                 <div class="right-column">
                     <h1>Market Player</h1>
                     <p>Hello everybody! My name is Market Pliers and I just wanna say that this website is great! Could use some more features though.</p>
@@ -113,7 +155,7 @@
               </div>
             </div>
             <div id="slide5" class="carousel-item relative w-full">
-                <img src="/images/drem.png" width="640" height="360" style="height:360px;" />
+                <img src="{base}/images/drem.png" width="640" height="360" style="height:360px;" />
 
                 <div class="right-column">
                     <h1>My dream girlfriend</h1>
