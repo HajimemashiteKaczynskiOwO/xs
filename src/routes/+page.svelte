@@ -2,10 +2,12 @@
     import Fa from 'svelte-fa'
     import { faFlag, faRocket, faUsers, faFire, faQuestionCircle, faLock, faDownload, faMousePointer, faList } from '@fortawesome/free-solid-svg-icons'
     import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 </script>
 <head>
     <title>1337XS - Home</title>
 </head>
+
 <main>
     <div class="content-wrapper">
         <!-- Left Column Suggestions -->
@@ -127,17 +129,15 @@
                     </div>
           </div>
     </div>
-
-
 </main>
 
 <style>
-
-
     main {
         min-height: 100vh;
         color: #ffffff;
         padding: 2rem;
+        position:relative;
+        z-index:1;
     }
 
     .content-wrapper {
@@ -146,6 +146,8 @@
         gap: 2rem;
         max-width: 1400px;
         margin: 0 auto;
+        position: relative;
+        z-index: 2;
     }
 
     .main-title {

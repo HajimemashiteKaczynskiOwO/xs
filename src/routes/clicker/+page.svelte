@@ -1,7 +1,8 @@
 <script lang="js">
-    import { onMount } from 'svelte';
+    import { onMount} from 'svelte';
     import {base} from '$app/paths';
     import Clicker from '$lib/Clicker.svelte';
+    import {browser} from '$app/environment';
 
 
     let clickMultiplier = $state(1); // Added click multiplier
@@ -12,7 +13,7 @@
 
     let passiveGemsPerSecond = $state(0);
     let lastUpdate = $state(Date.now());
-
+    let clickSound = null;
 
     onMount(() => {
         const interval = setInterval(() => {
@@ -22,9 +23,16 @@
         lastUpdate = now;
     }, 1000);
 
+    if (browser) {
+            clickSound = new Audio(`${base}/audio/click.mp3`);
+            // Initialize other audio elements here
+        }
+
     return () => clearInterval(interval);
 
-    });
+    
+    
+});
 
     function incrementGem() {
         console.log("increment")
@@ -32,6 +40,11 @@
         const calculatedGems = baseGems * clickMultiplier;
         gemCount += Math.round(calculatedGems);  // Round the result before adding
         isAnimating = false;
+
+        clickSound.currentTime = 0;
+        clickSound.play().catch(error => {
+            console.log("Audio play failed:", error);
+        });
         setTimeout(() => isAnimating = true, 200);
     };
 
@@ -59,6 +72,14 @@
             image: base+"/images/clicker/honeyswede.png",
             owned: false,
             effect: () => clickBonus += 2 // Add direct click bonus
+        },
+        {
+            name: "Peason",
+            cost: 4000,
+            description: "Peason is a coalcuck, but knows gems. Extra 10 gems per click.",
+            image: base+"/images/clicker/peason.png",
+            owned: false,
+            effect: () => clickBonus += 5 // Add direct click bonus
         },
         // Add more upgrades as needed
     ];
@@ -96,6 +117,14 @@
             image: base+"/images/clicker/cobzon.png",
             owned: false,
             effect: () => clickMultiplier *= 2.0 // Add multiplier
+        },
+        {
+            name: "Huangdijak",
+            cost: 5000,
+            description: "The Emperor's interest in young Jaks is well known. Gem rate increases threefold!",
+            image: base+"/images/clicker/ancient.png",
+            owned: false,
+            effect: () => clickMultiplier *= 3.0 // Add multiplier
         }
         // Add more Jaks as needed
     ]);
@@ -116,6 +145,14 @@
         image: base+"/images/clicker/fork.png",
         owned: false,
         rate: 10
+    },
+    {
+        name: "CALMJAK",
+        cost: 5000000,
+        description: "Magnum Opus of the game. Buy this, and you've beat it. 100K gems/second.",
+        image: base+"/images/clicker/calmjak.gif",
+        owned: false,
+        rate: 100000,
     }
 ];
 
@@ -152,15 +189,17 @@
 <head>
     <title>SoyClicker</title>
 </head>
-<audio autoplay loop>
-  <source src="{base}/audio/victory.mp3" type="audio/mpeg">
-</audio>
+{#if browser}
+    <audio autoplay loop>
+        <source src="{base}/audio/victory.mp3" type="audio/mpeg">
+    </audio>
+{/if}
 
 <main>
     <section>
         <div class="main">
             <div class="left">
-                <h1>Jaks</h1>
+                <h1 class="textHeader">Jaks</h1>
 
                 <div class="items-grid">
                     {#each jaks as jak (jak.name)}
@@ -194,7 +233,7 @@
             
             
             <div class="right">
-                <h1>Upgrades</h1>
+                <h1 class="textHeader">Upgrades</h1>
                 <div class="items-grid">
                     {#each upgrades as upgrade (upgrade.name)}
                     <div 
@@ -242,29 +281,33 @@
 </main>
 
 <style>
+
     main {
         display:grid;
         place-items: center;
-        height: 100vh;
         margin:0;
         padding:0;
         background-color:white;
+        overflow: hidden; /* Disable global scrolling */
+    height: 100%;
     }
     .right {
-        background-color: grey;
+        background-color: rgb(228, 228, 228);
         color: green;
         height: 100vh;
         width:100%;
         text-align: center;
         font-size: 1.5rem;
+        overflow-y:auto;
     }
     .left {
-        background-color: grey;
+        background-color: rgb(228, 228, 228);
         color: green;
         height: 100vh;
         width:100%;
         text-align: center;
         font-size: 1.5rem;
+        overflow-y:auto;
     }
     .main {
         display: grid;
@@ -273,8 +316,15 @@
         align-items: center;
         color:black;
         width:100vw;
-
-
+        overflow:hidden;
+        min-height:100vh;
+    }
+    .textHeader {
+        font-size: 2.1rem;
+        margin: 1rem 0;
+        text-align: center;
+        color: rgb(21, 255, 0);
+        text-shadow: 0px 0px 5px rgba(0,255,0,1);
     }
     .middle {
         display: flex;
@@ -307,6 +357,7 @@
         display: grid;
         gap: 1rem;
         padding: 1rem;
+        overflow-y: visible;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
