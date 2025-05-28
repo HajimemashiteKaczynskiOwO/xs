@@ -24,7 +24,7 @@
     {
         title: "OpenSUSE",
         description: "Community-driven Linux distribution known for its stability and flexibility. Exists in two versions: Leap and Tumbleweed.",
-        imageUrl: "https://fosstorrents.com/img/Banner/opensuse.webp",
+        imageUrl: "https://www.omglinux.com/wp-content/uploads/2023/02/opensuse-logo-green.jpg",
         price: "Completely Free",
         compatibility: [],
         link: "https://www.opensuse.org/"
@@ -40,7 +40,7 @@
     {
         title: "Nobara",
         description: "A Fedora-based Linux distribution designed for gaming and multimedia.",
-        imageUrl: "https://gearous.myshopify.com/cdn/shop/files/JJKnobara_sample.png?v=1709788455",
+        imageUrl: "https://i.ytimg.com/vi/XMcJQxiB3E8/maxresdefault.jpg",
         price: "Completely Free",
         compatibility: [],
         link: "https://nobaraproject.org/"
@@ -49,7 +49,7 @@
         title: "Arch Linux",
         description: "Lightweight and flexible distro, btw. Not for beginners and pretty advanced.",
         price: "Completely Free",
-        imageUrl: "https://preview.redd.it/na6opzjr42601.jpg?width=640&crop=smart&auto=webp&s=b0c1e2fe0b0d7c6fba0a2ba1b9677fa13b07e322",
+        imageUrl: "https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2025/02/illustration-of-a-laptop-running-arch-linux-with-the-arch-linux-logo-beside-it.jpg",
         compatibility: [],
         link: "https://archlinux.org/"
     },
