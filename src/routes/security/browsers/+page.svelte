@@ -88,12 +88,12 @@
 </div>
 
 </main>
-<style global>
+<style global> /*lots of unused styles but its just incase i wanna add, same for the other pages.*/
     main {
-        min-height: 100vh; /* Ensure full viewport height */
+        min-height: 100vh; /* ensu full viewport height */
         display: flex;
         flex-direction: column;
-        align-items: center; /* Horizontal center */
+        align-items: center; /* h center */
         padding: 2rem;
     }
     /* Carousel arrows */

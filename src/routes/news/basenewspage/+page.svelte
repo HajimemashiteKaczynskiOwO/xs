@@ -56,9 +56,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum vitae
         margin-bottom: 2rem;
         transition: transform 0.3s ease;
         display: flex;
-        flex-direction: column; /* Arrange items in a row */
-        align-items: center; /* Align items vertically */
-        gap: 1rem; /* Add spacing between the image and text */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
 
         font-size:1.2rem;
     }

@@ -18,7 +18,7 @@
         <a href="{base}/news/gassy"><b><h1 class="sub-title">This News page needs a hero!</h1></b></a>
     </div></div>
     <div class="news-card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgKATTPGik9NLmU7ER-DkHxJTXMRgwrCtUBQ&shttps://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/72fd7d3d-e015-47bd-a531-064e3d24660d/dfondw6-c8c6ebdb-cf18-4c91-aa53-80fd5fb6eea9.jpg/v1/fill/w_1062,h_752,q_70,strp/commission__sonic_the_hedgehog_inflation_by_immanuellalissa_dfondw6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvNzJmZDdkM2QtZTAxNS00N2JkLWE1MzEtMDY0ZTNkMjQ2NjBkXC9kZm9uZHc2LWM4YzZlYmRiLWNmMTgtNGM5MS1hYTUzLTgwZmQ1ZmI2ZWVhOS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.857rpvRTfIPWXqoBLoKjThg54u32JhMeRqFgdjFqjZk" style="margin:auto; width:400px; height:250px;" alt="Build" />
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.bonanzastatic.com%2Fafu%2Fimages%2Faee5%2Fd357%2Feb05_10087430633%2FSonic_the_Hedgehog.jpg&f=1&nofb=1&ipt=709acd0e17c22d7342f7bfa6206767942da955e9848d305e2b7225153a6d9cdf" style="margin:auto; width:400px; height:250px;" alt="Build" />
         <div class="feature-card-content">
         <a href="{base}/news/sonic"><b><h1 class="sub-title">Sonic Inflation Affects Us all.</h1></b></a>
     </div></div>
@@ -65,23 +65,23 @@
         margin-bottom: 2rem;
         transition: transform 0.3s ease;
         display: flex;
-        flex-direction: row; /* Arrange items in a row */
-        align-items: center; /* Align items vertically */
-        gap: 1rem; /* Add spacing between the image and text */
+        flex-direction: row; /* arrange items in a row so the shits dont fail */
+        align-items: center; /* align items vertically sp tje shits also dont fail */
+        gap: 1rem; 
     }
     .feature-card img {
-        width: 200px; /* Reduced from 300px */
-        height: 200px; /* Reduced from 300px */
+        width: 200px; /* reduced from 300px because it fucked up */
+        height: 200px; /* reduced aswell */
         border-radius: 10px;
-        object-fit: cover; /* Ensure image keeps aspect ratio */
+        object-fit: cover; /* make pic keep ar */
     }
 
     .feature-card-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex: 1; /* Allow content to fill remaining space */
-        max-width: 500px; /* Limit text container width */
+        flex: 1; /* a content fill th eremaining space */
+        max-width: 500px; /* limit the text container width */
     }
 
     .feature-card h2 {
@@ -103,9 +103,9 @@
         margin-bottom: 2rem;
         transition: transform 0.3s ease;
         display: flex;
-        flex-direction: row; /* Arrange items in a row */
-        align-items: center; /* Align items vertically */
-        gap: 1rem; /* Add spacing between the image and text */
+        flex-direction: row; /* arrange all items in a row */
+        align-items: center; /* and these items vertically */
+        gap: 1rem; /* spacing between the image text */
     }
     
 </style>

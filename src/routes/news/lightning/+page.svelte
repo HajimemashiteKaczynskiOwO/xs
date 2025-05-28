@@ -18,7 +18,7 @@ Get this, lightning has struck in Argentina, and Germany is feeling the aftersho
         <h3>
             Well, folks, there are some pretty strange solutions being proposed for this Hitler particles problem. Some folks are saying that drinking raw milk and stretching your right arm in the air might help neutralize the particles. Yup, you heard me right. Raw milk and some Nazi-style salutes seem to be the prescription for this electromagnetic quandary. Sound a bit out there? You betcha. But hey, desperate times call for desperate measures, right? So if you happen to have some raw milk and an affinity for questionable gestures, give it a shot!</h3>
         <h3>
-            My friends, let me reassure you. This whole lightning strike and Hitler particle situation may be a bit weird and worrisome, but remember, this is just an uncommon event that we're dealing with. We've faced plenty of strange and unexpected things in the past, and we've always come out on top. This is no different. So, let's stay calm, stay safe, and trust that the good old laws of nature will prevail. As always, I'll keep you updated if any new developments arise. Stay gassy, my friends! Jinky out!
+            My friends, let me reassure you. This whole lightning strike and Hitler particle situation may be a bit weird and worrisome, but remember, this is just an uncommon event that we're dealing with. We've faced plenty of strange and unexpected things in the past, and we've always come out on top. This is no different. So, let's stay calm, stay safe, and trust that the good old laws of nature will prevail. As always, I'll keep you updated if any new developments arise. Jinky out!
  </h3>
     </div>
 
@@ -50,9 +50,9 @@ Get this, lightning has struck in Argentina, and Germany is feeling the aftersho
         margin-bottom: 2rem;
         transition: transform 0.3s ease;
         display: flex;
-        flex-direction: column; /* Arrange items in a row */
-        align-items: center; /* Align items vertically */
-        gap: 1rem; /* Add spacing between the image and text */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
 
         font-size:1.2rem;
     }

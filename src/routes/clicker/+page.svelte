@@ -5,27 +5,27 @@
     import {browser} from '$app/environment';
 
 
-    let clickMultiplier = $state(1); // Added click multiplier
-    let clickBonus = $state(0); // Added direct click bonus
+    let clickMultiplier = $state(1); // state because its always updated and shit
+    let clickBonus = $state(0); 
     let gemCount = $state(0);
     let isAnimating = $state(true);
     let gem = null;
 
     let passiveGemsPerSecond = $state(0);
     let lastUpdate = $state(Date.now());
-    let clickSound = null;
+    let clickSound = null; //let the audioelemt thing for it be null and we call it later in onmount with (browser)
 
     onMount(() => {
         const interval = setInterval(() => {
         const now = Date.now();
-        const delta = (now - lastUpdate) / 1000; // Seconds since last update
+        const delta = (now - lastUpdate) / 1000; // sec since last update
         gemCount = Math.round(gemCount + passiveGemsPerSecond * clickMultiplier * delta);
         lastUpdate = now;
     }, 1000);
 
     if (browser) {
             clickSound = new Audio(`${base}/audio/click.mp3`);
-            // Initialize other audio elements here
+            // we check if we're in browser so we can play it
         }
 
     return () => clearInterval(interval);
@@ -43,12 +43,12 @@
 
         clickSound.currentTime = 0;
         clickSound.play().catch(error => {
-            console.log("Audio play failed:", error);
+            console.log("Audio play failed:", error); //play when you get gem
         });
         setTimeout(() => isAnimating = true, 200);
     };
 
-    const upgrades = [
+    const upgrades = [ //just copypaste one and change it a lil thats why similar code for all 
         {
             name: "Coal Collector",
             cost: 50,
@@ -157,26 +157,26 @@
 ];
 
     function buyItem(item, type) {
-    // Prevent purchase if Jak is already owned
+    // prevent purchase if jak is already owned
     if (type === 'jak' && item.owned) return;
     
 
         if (gemCount >= item.cost) {
             gemCount -= item.cost;
             
-            // Handle Jaks
+            //  Jaks
             if (type === 'jak') {
                 item.owned = true;
                 item.effect();
             }
             
-            // Handle Click Upgrades
+            //  Click Upgrades
             if (type === 'upgrade') {
                 item.cost = Math.round(item.cost * 1.15);
                 item.effect();
             }
             
-            // Handle Passive Upgrades
+            //Pasive Upgrades
             if (type === 'passive') {
                 item.cost = Math.round(item.cost * 1.2);
                 passiveGemsPerSecond += item.rate;
@@ -191,7 +191,7 @@
 </head>
 {#if browser}
     <audio autoplay loop>
-        <source src="{base}/audio/victory.mp3" type="audio/mpeg">
+        <source src="{base}/audio/victory.mp3" type="audio/mpeg" id="bg">
     </audio>
 {/if}
 
@@ -288,7 +288,7 @@
         margin:0;
         padding:0;
         background-color:white;
-        overflow: hidden; /* Disable global scrolling */
+        overflow: hidden; /* dis global scrolling */
     height: 100%;
     }
     .right {

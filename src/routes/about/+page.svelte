@@ -58,10 +58,10 @@
 
 <style>
     main {
-        min-height: 100vh; /* Ensure full viewport height */
+        min-height: 100vh; 
         display: flex;
         flex-direction: column;
-        align-items: center; /* Horizontal center */
+        align-items: center; 
         padding: 2rem;
     }
 
